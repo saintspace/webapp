@@ -18,7 +18,7 @@ export default function Home() {
       const postData = {
         token: token
       }
-      const verificationEndpoint = process.env.NEXT_PUBLIC_API_BASE_URL + 'v1/verify-email'
+      const verificationEndpoint = process.env.NEXT_PUBLIC_API_BASE_URL + 'v1/email-verifications'
       fetch(verificationEndpoint, {
         method: 'POST',
         headers: {
